@@ -3,6 +3,7 @@ import { useState } from "react";
 import ComponentA from "./components/ComponentA";
 import ComponentB from "./components/ComponentB";
 import ComponentC from "./components/ComponentC";
+import Cocktail from "./components/Cocktail";
 
 const App = () => {
   const [appState, setAppState] = useState(1);
@@ -21,7 +22,8 @@ const App = () => {
       <button onClick={add}>Add</button>
       <ComponentA appState={appState} />
       <ComponentB setAppState={setAppState} add={add} /> */}
-      <ComponentC />
+      {/* <ComponentC /> */}
+      <Cocktail />
     </div>
   );
 };
