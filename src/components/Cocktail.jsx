@@ -25,9 +25,7 @@ const Cocktail = () => {
   };
 
   useEffect(() => {
-    (async () => {
-      await fetchDrink(drink);
-    })();
+    fetchDrink(drink);
   }, []);
 
   return (
